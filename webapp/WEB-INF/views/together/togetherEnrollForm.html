@@ -65,7 +65,7 @@
         <form action="<%= contextPath %>/insert.tg" method="post">
         	<input type="hidden" name="userNo" value="<%= loginMember.getUserNo() %>">
             <div id="write1">
-                <p id="ff4">썸네일 <em style="color: red;">*</em></p>
+                <p id="ff4">모임홍보사진 <em style="color: red;">*</em></p>
 
                 <div class="uploadimg">
                     <img id="titleImg" width="250" height="170" onclick="chooseFile(1);">
@@ -76,17 +76,17 @@
                 </div>
             <br>
             <div id="write2">
-                <label id="ff4">제목</label><br><input type="text" name="title" style="width: 650px; margin: 5px 0 0 0;" maxlength="18" required>
+                <label id="ff4">제목</label><em style="color: red;">*</em><br><input type="text" name="title" style="width: 650px; margin: 5px 0 0 0;" maxlength="18" required>
             </div>
             <br>
             <div id="write3">
-                <label id="ff4">내용</label><br><textarea name="content" cols="71" rows="8" style="resize: none;" required></textarea>
+                <label id="ff4">내용</label><em style="color: red;">*</em><br><textarea name="content" cols="71" rows="8" style="resize: none;" required></textarea>
                 <br>
             </div>
             <br>
             <div id="write4">
                 <hr>
-                <span id="ff4">모집인원</span>
+                <span id="ff4">모집인원<em style="color: red;">*</em></span>
                 <br>
                 <select name="people" required>
                     <option value="100">제한없음</option>
@@ -100,18 +100,18 @@
             </div>
             <div id="write5">
                 <hr>
-                <span id="ff4">📍 장소</span>
+                <span id="ff4">📍 장소<em style="color: red;">*</em></span>
                 <br><input type="text" name="mountain" style="width: 650px; margin: 5px 0 0 0;" placeholder="ex) 한강" required>
             </div>
             <br>
             <div id="write7">
                 <hr>
-                <span id="ff4">📅 날짜</span><br>
+                <span id="ff4">📅 날짜<em style="color: red;">*</em></span><br>
                 <input type="date" name="date" id="dateIn" required>
                 <hr>
             </div>
                 <div id="write8">
-                    <span id="ff4">🕒 시간</span><br><br>
+                    <span id="ff4">🕒 시간<em style="color: red;">*</em></span><br><br>
                     <input type="radio" name="ampm" id="time1" value="오전" required><label for="time1">오전</label><br>
                     <input type="radio" name="ampm" id="time2" value = "오후"><label for="time2">오후</label>
                     <br><input type="number" name="time" min="1" max="12" required> 시<br><br>
