@@ -47,16 +47,6 @@
     background: url("https://s.wemep.co.kr/ui/v2.8.797/dist/pc/css/spr/common.png") no-repeat
 }
 
-.mypage_deallist .item_img {
-    background: #f5f5f5 url("https://image.wemakeprice.com/images/resources_v2/front/category/default_logo.png") no-repeat 50% 50%
-}
-
-.mypage_deallist .item_img img {
-    width: 100%;
-    height: 100%;
-    display: block
-}
-
 .seller_store_list>li .thumb,
 .cpn_list_table .table_info td .my_tbl_con.cp_name_wrap .store_name .logo {
     background: #f5f5f5 url("https://image.wemakeprice.com/images/resources_v2/front/category/default_logo_sm.png") no-repeat 50% 50%
@@ -2414,7 +2404,7 @@ button {
 
 .mypage_wrap .mypage_lnb .lnb_list .mypage_tit {
     padding: 60px 0;
-    background: #ef2011;
+    background: #c4e604;
     text-align: center;
     margin: -1px -1px 0 -1px
 }
@@ -2650,7 +2640,7 @@ button {
     text-align: center;
     letter-spacing: -1px;
     vertical-align: top;
-    width: 25%
+    width: 50%
 }
 
 .user_info_box .my_detail_box dt:not(:first-child):before {
@@ -2674,7 +2664,7 @@ button {
 }
 
 .user_info_box .my_detail_box dd:nth-of-type(2) [class^=my_] {
-    left: 25%
+    left: 50%
 }
 
 .user_info_box .my_detail_box dd:nth-of-type(3) [class^=my_] {
@@ -2690,7 +2680,7 @@ button {
     top: 35px;
     left: 0;
     text-align: center;
-    width: 25%
+    width: 50%
 }
 
 .user_info_box .my_detail_box [class^=my_]:hover em {
@@ -5924,12 +5914,6 @@ h4.tit_txt {
     margin-top: 30px
 }
 
-.content_wide.delay {
-    height: 262px;
-    padding-top: 78px;
-    background: url(https://image.wemakeprice.com/images/resources_v2/front/delivery_delay/visual_top.png) no-repeat 50% 0 #727375;
-    margin-bottom: 10px
-}
 
 .content_wide.delay strong {
     display: block;

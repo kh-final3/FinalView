@@ -77,10 +77,7 @@
 
                                             <li><a href="https://front.wemakeprice.com/mypage/wishlist" data-id="">찜
                                                     리스트</a></li>
-                                            <li><a href="https://front.wemakeprice.com/mypage/coupon"
-                                                    data-id="">할인쿠폰</a></li>
-                                            <li><a href="https://front.wemakeprice.com/mypage/point" data-id="">포인트</a>
-                                            </li>
+                                            
                                             <li><a href="javascript:void(0);" data-id="wtalk">판매자톡</a></li>
                                             <li><a href="https://front.wemakeprice.com/mypage/qna/list"
                                                     data-id="">상품문의</a></li>
@@ -99,7 +96,7 @@
 
                                 <div class="user_info_box" data-container="dashboard">
                                     <div class="greeting_box">
-                                        <em>류*수</em>님 환영합니다!
+                                        <em>김*김</em>님 환영합니다!
                                         <a href="javascript:void(0);" class="ico setup"
                                             data-dashboard-button="modifyUserBtn">회원정보수정하기</a>
                                         <a href="https://front.wemakeprice.com/cs/notice" class="wmp_notice">하비포토 공지사항
@@ -124,26 +121,7 @@
                                                     <span class="tit t_goods_num_black">건</span>
                                                 </a>
                                             </dd>
-                                            <dt>
-                                                사용가능 포인트
-                                                <a href="https://front.wemakeprice.com/deal/604272359"
-                                                    class="btn_sys sml_s"><span>충전</span></a>
-                                            </dt>
-                                            <dd>
-                                                <a href="https://front.wemakeprice.com/mypage/point"
-                                                    class="my_point_con">
-                                                    <em>0</em>
-                                                    <span class="tit t_point_black">P</span>
-                                                </a>
-                                            </dd>
-                                            <dt>할인쿠폰</dt>
-                                            <dd>
-                                                <a href="https://front.wemakeprice.com/mypage/coupon"
-                                                    class="my_dc_cpn_con">
-                                                    <em>0</em>
-                                                    <span class="tit t_paper">장</span>
-                                                </a>
-                                            </dd>
+                                            
                                         </dl>
                                     </div>
                                 </div>
@@ -243,6 +221,8 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+
+                                                <!-- 구매한게 없을때 -->
                                                 <tr>
                                                     <td colspan="4">
                                                         <div class="no_list_order">
@@ -255,50 +235,117 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
+                                                <!-- 구매한게 있을때 -->
+                                                <tr data-value="324847812" data-index="0">
+                                                    <td>
+                                                        <div class="order_num">
+                                                            2023-10-13<br>(324847812)
+                                                            <a href="https://front.wemakeprice.com/mypage/order/324847812"
+                                                                class="btn_sys sml_m"><span>주문 상세보기</span></a>
+                                                            <a href="javascript:void(0);" class="btn_sys sml_m cancel"
+                                                                data-action="cancelVbank"
+                                                                data-value="324847812"><span>입금대기취소</span></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="basic_type">
+                                                            <span class="thum"><img
+                                                                    src="https://view01.wemep.co.kr/wmp-product/2/197/289101972/289101972_thumbnail.jpg"
+                                                                    alt="[후지필름] 후지 인스탁스 미니필름 8팩 (80장) /폴라로이드필름"></span>
+                                                            <div class="prd_info">
+                                                                <span class="mall"><a href="javascript:void(0);"
+                                                                        data-button="partnerInfo"
+                                                                        data-order-no="458309097">필름스튜디오</a></span>
+                                                                <a href="javascript:void(0);" class="seller_inquiry"
+                                                                    data-action="wtalk" data-prod-no="289101972"
+                                                                    data-order-no="458309097">판매자 문의</a>
+                                                                <div class="title">
+                                                                    <a href="https://front.wemakeprice.com/deal/606428316?prodNo=289101972&amp;allowView=Y"
+                                                                        target="_blank">
+                                                                        [후지필름] 후지 인스탁스 미니필름 8팩 (80장) /폴라로이드필름
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="option_wrap">
+                                                            <li>
+                                                                <div class="opt_info">
+                                                                    <span class="price_info">
+                                                                        <span class="price"><em>84,000</em>원</span>
+                                                                        <em class="line">/</em>1개
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <p class="status">
+                                                            <strong>입금대기</strong>
+                                                            <span>10/14 이내</span>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                </tr>
+                                                <tr data-value="324847773" data-index="0">
+                                                    <td>
+                                                        <div class="order_num">
+                                                            2023-10-13<br>(324847773)
+                                                            <a href="https://front.wemakeprice.com/mypage/order/324847773"
+                                                                class="btn_sys sml_m"><span>주문 상세보기</span></a>
+                                                            <a href="javascript:void(0);" class="btn_sys sml_m cancel"
+                                                                data-action="cancelVbank"
+                                                                data-value="324847773"><span>입금대기취소</span></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="basic_type">
+                                                            <span class="thum"><img
+                                                                    src="https://view01.wemep.co.kr/wmp-product/7/401/2305544017/2305544017_thumbnail.jpg"
+                                                                    alt="[인스탁스] 인스탁스 미니90 폴라로이드 카메라+선물2종"></span>
+                                                            <div class="prd_info">
+                                                                <span class="mall"><a href="javascript:void(0);"
+                                                                        data-button="partnerInfo"
+                                                                        data-order-no="458309050">제이에스헤럴드나인</a></span>
+                                                                <a href="javascript:void(0);" class="seller_inquiry"
+                                                                    data-action="wtalk" data-prod-no="2305544017"
+                                                                    data-order-no="458309050">판매자 문의</a>
+                                                                <div class="title">
+                                                                    <a href="https://front.wemakeprice.com/product/2305544017?allowView=Y"
+                                                                        target="_blank">
+                                                                        [인스탁스] 인스탁스 미니90 폴라로이드 카메라+선물2종
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="option_wrap">
+                                                            <li>
+                                                                <div class="opt_info">
+                                                                    <span class="price_info">
+                                                                        <span class="price"><em>233,860</em>원</span>
+                                                                        <em class="line">/</em>1개
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <p class="status">
+                                                            <strong>입금대기</strong>
+                                                            <span>10/14 이내</span>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <h4 class="tit t_order_guide">주문/배송 상태 안내</h4>
                                     <div class="order_guide_process ">
-                                        <dl class="blind">
-                                            <dt>STEP 1, 입금 대기중</dt>
-                                            <dd>
-                                                입금이 아직 이뤄지지 않은 단계입니다. 1일 이내 미 입금시 주문 취소 됩니다.
-                                                <ul>
-                                                    <li>배송지변경 가능</li>
-                                                    <li>주문취소 가능</li>
-                                                </ul>
-                                            </dd>
-                                            <dt>STEP 2, 결제완료</dt>
-                                            <dd>
-                                                판매자가 주문을 확인하기 전입니다.
-                                                <ul>
-                                                    <li>배송지변경 가능</li>
-                                                    <li>주문취소 가능</li>
-                                                </ul>
-                                            </dd>
-                                            <dt>STEP 3, 상품준비중</dt>
-                                            <dd>
-                                                주문하신 상품을 준비중입니다.
-                                                <ul>
-                                                    <li>취소신청 가능</li>
-                                                </ul>
-                                            </dd>
-                                            <dt>STEP 4, 배송중</dt>
-                                            <dd>
-                                                상품이 발송되어 고객님께 배송중입니다.
-                                            </dd>
-                                            <dt>STEP 5, 배송완료</dt>
-                                            <dd>
-                                                상품수령 후 수취확인을 선택하시면 거래가 종료됩니다.
-                                                <ul>
-                                                    <li>교환 신청 가능</li>
-                                                    <li>반품 신청 가능</li>
-                                                    <li>구매후기 작성 가능</li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
+                                       
                                     </div>
                                 </div>
                             </div>
