@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .content{
+        width: 1370px;
+        margin: auto;
+    }
+    .recommend{
+        border-bottom: 1px solid lightgray;
+    }
+
+    #contentArea th{
+        border-right: 1px solid lightgray;
+    }
+
+    #contentArea th,td{
+        padding-left: 20px;
+    }
+
+    .text{font-size: 14px; color: gray; margin-right: 70px;}
+
+    #etc{padding-left: 20px;}
+    
+    .rc-btn>button{margin-left: 10px;}
+</style>
+</head>
+<body>
+    <div class="content">
+        <br><br>
+        <div align="center">
+            <h2>장비 추천</h2>
+            <h6 style="color: gray;">사용자가 전해주는 다양한 카메라 이야기!</h6>
+        </div>
+        <br>
+        <div class="recommend">
+            <table id="contentArea" align="center" class="table">
+                <tr>
+                    <th width="100">제목</th>
+                    <td><input type="text" style="width: 500px;" value="게시글 제목입니다"></td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>user01</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="etc"><span>작성일</span> <span class="text">2023-03-31</span> <span>조회수</span> <span class="text">2</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="content" id="content" cols="180" rows="15" style="resize: none;">게시글 내용입니다</textarea></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="rc-btn" align="right" style="width: 1300px;" >
+            <button class="btn btn-dark">작성</button>
+            <button class="btn btn-dark">취소</button>
+        </div>
+    </div>
+</body>
+</html>
