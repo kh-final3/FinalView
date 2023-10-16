@@ -11,11 +11,12 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
+            margin-top: 30px;
             padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            /* height: 1000px; */
         }
 
         .container {
@@ -70,17 +71,33 @@
         button:hover {
             background-color: #45a049;
         }
+
+        .select-area{
+            height: 40px;
+        }
     </style>
 
 </head>
 <body>
     <div class="container">
         <h2>상품 등록</h2>
-        <form action="submit_product" method="post">
+        <form action="#" method="post">
             <label for="productName">상품명:</label>
             <input type="text" id="productName" name="productName" required>
 
+            <label for="productName">브랜드 명:</label>
+            <select class="select-area">
+                <option value="코닥">코닥</option>
+                <option value="코닥">소닉</option>
+                <option value="코닥">캐논</option>
+            </select>
+
+            <br>
+
             <label for="productPrice">가격:</label>
+            <input type="number" id="productPrice" name="productPrice" required>
+
+            <label for="productPrice">수량:</label>
             <input type="number" id="productPrice" name="productPrice" required>
 
             <label for="productDescription">상품 설명:</label>
