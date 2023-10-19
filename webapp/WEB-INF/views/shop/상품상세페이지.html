@@ -19,6 +19,9 @@
         .tit{font-size: 16px; font-weight: bold;}
         .smoll-tit{font-size: 14px; color: gray;}
         #pd-selectbox{width: 570px; height: 50px; padding-left: 10px;}
+        #count-box{width: 122px; height: 40px; border: 1px solid #ddd; display: block; float: right;}
+        #count-box *{width: 40px; height: 100%; font-weight: 700; box-sizing: border-box; display: block; float: left; border: 0; background-color: white; text-align: center;}
+        #count-box button{outline: 0;}
         .product-tprice{width: 570px; height: 50px; margin-top: 24px; padding-top: 21px; border-top: 2px solid black;}
         .result-price{float: right; padding-right: 10px;}
         .product-btn{width: 570px; height: 64px;}
@@ -28,7 +31,7 @@
         .product-nav{border-top: 2px solid black; border-bottom: 1px solid lightgray;}
         ul>li{list-style-type: none;}
         .product-nav>ul{margin-bottom: 0px;}
-        .product-nav>ul>li{ width: 300px; height: 70px; padding-top: 20px; display: inline-block; font-size: 20px; font-weight: bolder;} 
+        .product-nav>ul>li{ width: 300px; height: 70px; padding-top: 20px; display: inline-block; font-size: 20px; font-weight: bolder;}
     </style>
 </head>
 <body>
@@ -46,8 +49,9 @@
                     </strong>
                 </div>
                 <div class="product-price">
+                    <strong class="st-price">2,059,000</strong>
                     <strong>
-                        2,059,000 원
+                        원
                     </strong>
                 </div>
                 <div class="product-select">
@@ -55,10 +59,13 @@
                         제품선택
                     </p>
                     <div>
-                        <select name="selected" id="pd-selectbox">
-                            <option value="" style="display: none;" disabled selected>제품을 선택하세요</option>
-                            <option value="black">EOS R8/블랙</option>
-                        </select>
+                        <div id="pd-selectbox">
+                            <div id="count-box" align="center">
+                                <button class="minus">-</button>
+                                <input class="count" type="text" value="1" align="center">
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="product-tprice">
                         <p class="tit">
@@ -66,12 +73,12 @@
                             <span class="smoll-tit">
                                 (총
                                 <span class="count">
-                                    -
+                                    
                                 </span>
                                 개)
                             </span>
                             <span class="result-price">
-                                <span class="num">-</span>
+                                <span class="num">2,059,000</span>
                                 원
                             </span>
                         </p>
@@ -238,5 +245,39 @@
         </div>
         <br><br><br>
     </div>
+
+    <script>
+        $(()=>{
+            $(".count").text($(".count").val())
+            $(".minus").click(()=>{
+                let count = Number($(".count").val());
+                let price =  Number($(".st-price").text().replace(/,/g,''));
+                let totalPrice = Number($(".num").text().replace(/,/g,'')); 
+
+                console.log(totalPrice)
+                
+                if($(".count").val() != 1){
+                    $(".count").val(count-1)
+                    $(".count").text($(".count").val())
+                    totalPrice = totalPrice - price;
+                    $(".num").text(totalPrice.toLocaleString('ko-KR'));
+                }
+            })
+
+            $(".plus").click(()=>{
+                let count = Number($(".count").val());
+                let price =  Number($(".st-price").text().replace(/,/g,''));
+                let totalPrice = price;
+
+                if($(".count").val() != 5){
+                    $(".count").val(count+1)
+                    $(".count").text($(".count").val())
+                    totalPrice = price * $(".count").val();
+                    $(".num").text(totalPrice.toLocaleString('ko-KR'));
+                }
+            })
+        })
+    </script>
+
 </body>
 </html>
