@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쇼핑 몰 마이 페이지</title>
+</head>
+<style>
+  div {
+    /* border: 1px solid black; *//
+  }
+  .sidebar{
+    width: 300px;
+    float: left;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  .gradeOrder{
+    float: left;
+  }
+  .grade{
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 1000px;
+    height: 150px;
+  }
+  .order{
+    width: 1000px;
+    height: 400px;
+  }
+  .orderBox{
+    width: 1000px;
+    height: 200px;
+    border: 1px solid gainsboro;
+    display: flex; 
+  }
+  .orderBox div {
+    flex: 1; 
+    border: 1px solid gainsboro;
+    margin: 5px;
+  }
+  #gradeInfo{
+    margin-left: 30px;
+  }
+  .sidebar a, p{
+    margin-left: 30px;
+  }
+  a{
+   font-size: 13px;
+  }
+</style>
+<body>
+   <div class="outer">
+      <div class="content">
+        <div class="sidebar">
+          <div class="myInfo">
+            <p style="font-size: 20px;">마이페이지</p>
+            <p>홍길동</p>
+            <p>좋아요 3개</p>
+          </div>
+          <div class="shoppingInfo">
+            <p>나의 쇼핑 정보</p>
+            <a href="#">주문 배송 조회</a> <br>
+            <a href="#">취소/교환/반품 상세</a><br>
+            <a href="#">상품 리뷰</a><br>
+            <a href="#">서류 발급</a><br>
+          </div>
+          <div class="accountSetting">
+            <p>계정 설정</p>
+            <a href="#">회원 정보 수정</a><br>
+            <a href="#">회원 등급</a><br>
+            <a href="#">쿠폰</a><br>
+            <a href="#">마일리지</a><br>
+          </div>
+        </div>
+        <div class="gradeOrder">
+          <div class="grade">
+            <br>
+            <div id="gradeInfo">
+              <p>홍길동님은 기본등급입니다.</p>
+              <p>구매금액 0원 | 구매건수 1건</p>
+            </div>
+          </div>
+          <hr>
+          <div class="order">
+            <p>나의 주문현황</p>
+            <div class="orderBox">
+              <div id="onetoone">
+                <p>1:1문의</p>
+                <hr>
+                <p>답변대기</p>
+                <p>답변완료</p>
+              </div>
+              <div>
+                <p>상품문의</p>
+                <hr>
+                <p>답변대기</p>
+                <p>답변완료</p>
+              </div>
+              <div>
+                <p>상품후기</p>
+                <hr>
+                <p>적용가능 보기</p>
+                <p>작성완료 보기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
